@@ -21,6 +21,7 @@ const { customTrackingHeader } = require('./config');
 exports.sourceNodes =
   async ({ actions: { createNode }, createNodeId },
     { deliveryClientConfig, languageCodenames }) => {
+    console.info(`USING GATSBY REVIEW`);
     console.info(`Generating Kentico Cloud nodes for projectId:\
  ${_.get(deliveryClientConfig, 'projectId')}`);
     console.info(`Provided language codenames: ${languageCodenames}.`);
