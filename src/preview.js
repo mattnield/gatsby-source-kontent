@@ -72,7 +72,8 @@ const performUpdate = (
       // TODO call resolvers for Rich text and URL slugs + parse and stringify
       // TODO: inform people that there is only context of the item with
       // default depth (take a look what is th default one)
-      // no links in rich text would not have the context of links to another context items
+      // no links in rich text would not have the context of links
+      // to another context items
       richTextElementDecorator
         .resolveData([resolvedItem.item]);
       urlSlugElementDecorator
